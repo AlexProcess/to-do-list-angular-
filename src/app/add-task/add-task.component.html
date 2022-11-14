@@ -1,0 +1,22 @@
+<main>
+
+
+  <input placeholder="Write your next task here..." [ngModel]="anadirTarea" [ngClass]="['add__task']" type="text">
+
+  <div class="task__container"  *ngFor="let task of taskList; let index = index"  [ngClass]="{'tachado': task.isDone}">
+
+    <input type="checkbox" [(ngModel)]="task.isDone">
+    {{task.title}}
+
+    <button class="ui__button" (click)="deleteTask(index)"><i class="fa fa-trash"></i></button>
+  </div>
+
+  <!-- <input  [ngClass]="['submmit__task']" type="submmit" value="Save Task"> -->
+  <button class="ui-button__add" (click)="addTarea(anadirTarea)">magia borras</button>
+
+
+</main>
+
+
+
+

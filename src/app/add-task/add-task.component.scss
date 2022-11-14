@@ -1,0 +1,82 @@
+.add__task{
+  display: flex;
+  font-size: 30px;
+  font-weight: 600;
+  border: none;
+
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+
+.tachado{
+  text-decoration: line-through;
+}
+
+.ui__button{
+    margin-left: 10px;
+    padding: 0.8em 1.8em;
+    border: 2px solid #fff;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: #333;
+   }
+
+   .ui__button::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #000;
+    color: #fff;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+   }
+
+   .ui__button:hover::before {
+    width: 105%;
+   }
+
+   .ui__button:hover {
+    color: #fff;
+   }
+   .task__container{
+    border: solid 1px #333;
+
+    }
+
+    .ui-button__add{
+      color: #090909;
+      padding: 0.7em 1.7em;
+      font-size: 18px;
+      border-radius: 0.5em;
+      background: #e8e8e8;
+      border: 1px solid #e8e8e8;
+      transition: all .3s;
+      box-shadow: 6px 6px 12px #c5c5c5,
+                  -6px -6px 12px #ffffff;
+      width: 20%;
+      margin: 20px;
+     }
+
+     .ui-button__add:active {
+      color: #666;
+      box-shadow: inset 4px 4px 12px #c5c5c5,
+                  inset -4px -4px 12px #ffffff;
+     }

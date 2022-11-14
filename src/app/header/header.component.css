@@ -1,0 +1,19 @@
+header {
+  display: flex;
+  background-color: #843ab8;
+  background-image: url("/assets/noise-6c9cbd8ae3e6f794629707867f8786c1f092fae09620e7a1e3faeca9c3ed8caf.png"), linear-gradient(#a648c4, #7930a7);
+  min-height: 8vh;
+  min-width: 20vh;
+}
+
+input {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 25px;
+  border: none;
+  background-color: #fff;
+  min-height: 3vh;
+}/*# sourceMappingURL=header.component.css.map */
